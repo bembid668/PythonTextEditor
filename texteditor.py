@@ -28,5 +28,13 @@ def FontCourier():
     global text
     text.conf(font="Courier")
 
+font = Menubutton(root, text="Font")
+font.grid()
+font.menu = Menu(font, tearoff = 0)
+
+Helvetica = IntVar()
+arial = IntVar()
+times = IntVar()
+Courier = IntVar()
 
 root.mainloop()
