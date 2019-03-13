@@ -17,5 +17,11 @@ def saveas():
     file1.write(t)
     file1.close()
 
+button = Button(root, text="Save", command=saveas)
+button.grid()
+
+def FontHelvetica():
+    global text
+    
 
 root.mainloop()
