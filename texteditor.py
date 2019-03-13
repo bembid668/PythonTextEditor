@@ -28,6 +28,14 @@ def FontCourier():
     global text
     text.conf(font="Courier")
 
+def Fontarial():
+    global text
+    text.conf(font="arial")
+
+def Fonttimes():
+    global text
+    text.conf(font="times")
+
 font = Menubutton(root, text="Font")
 font.grid()
 font.menu = Menu(font, tearoff = 0)
@@ -36,5 +44,10 @@ Helvetica = IntVar()
 arial = IntVar()
 times = IntVar()
 Courier = IntVar()
+
+font.menu.add_checkbutton(label="Courier", variable = Courier, command = FontCourier)
+font.menu.add_checkbutton(label="Helvetica", variable = Helvetica, command = FontHelvetica)
+font.menu.add_checkbutton(label="arial", variable = arial, command = Fontarial)
+font.menu.add_checkbutton(label="times", variable = times, command = Fonttimes)
 
 root.mainloop()
