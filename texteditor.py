@@ -22,6 +22,11 @@ button.grid()
 
 def FontHelvetica():
     global text
-    
+    text.config(font="Helvetica")
+
+def FontCourier():
+    global text
+    text.conf(font="Courier")
+
 
 root.mainloop()
